@@ -1,0 +1,59 @@
+Admin: (can change the password)
+managing of product: (add the system date to add/delete/update)
+- add product   ---> @POST
+- delete product  ---> @DELETE
+- update the product details   ---> @PUT
+- search the product by - ---> @GET + Path variable {id}/{brand}/{shoe_name}/{category}/{color}/{price}/{manufacture_date}
+    - season (winter, summer, rainy)
+    - brand(nike /adidas/ puma)
+    - cateogry( male / female / both)
+    - price (Asc/ Desc order)
+    - product color (black, brown, white)
+    - date -- latest products (means latest date)
+
+browse the list of users:
+- view users which are registered on the website  ---> @Get
+
+purchase order reports filtered by date and category (use the table product_order)
+- get all the product details   --> @Get
+- get all the users till now    --> @Get
+
+tables: (schema of the tables to be submited along with the project tables)
+product table --> productId, productName, season, brand, category, price, color, createdDate, discount, quantity
+user table --> userID, username, password, email, phone_number
+product_order --> userID, productId
+
+model :
+1) product class:(class variables)
+   productId, productName, season, brand, category, price, color, createdDate, discount, quantity
+
+2) User class: (class variables)
+   userID, username, password, email, phone_number
+
+
+Steps:
+
+1) Create a spring boot project
+
+2) create the tables - product, user, product_order
+
+3) create the diff packages - 
+   - controller
+   - model/bean
+   - service/repository
+   - dao (dont create if you are using JPA)
+
+4) create the POJO beans inside the model package
+
+5) work over the service class in service package
+
+6) create the methods inside the controller class 
+
+7) use the POSTMAN tool to call the API from the controller
+
+
+
+
+
+
+

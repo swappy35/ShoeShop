@@ -1,0 +1,163 @@
+create table product_tbl (
+shoeID Integer, 
+shoeBrand varchar(255), 
+shoeName varchar(255), 
+shoeCategory varchar(255), 
+shoeColor varchar(255), 
+shoeManufactureDate Date,
+shoePrice FLOAT(7,2), 
+shoeQuantity Integer,
+primary key (shoeID));
+
+
+
+ insert into product_tbl values(1, "Puma", "F-00101", "Football shoes", "Black", "2022-01-15", 6500.0, "10");
+ insert into product_tbl values(2, "Puma", "B-00102", "Basketball shoes", "Red", "2022-01-10", 5000.0, "15");
+ insert into product_tbl values(3, "Puma", "V-00103", "Volleyball shoes", "Black", "2022-01-17", 4000.0, "20");
+ insert into product_tbl values(4, "Puma", "R-00104", "Running shoes", "Yellow", "2022-01-1", 5500.0, "25");
+ insert into product_tbl values(5, "Puma", "C-00105", "Casual shoes", "Green", "2022-01-19", 6000.0, "5");
+
+ insert into product_tbl values(6, "Adidas", "F-00201", "Football shoes", "Red", "2022-01-14", 4500.0, "100");
+ insert into product_tbl values(7, "Adidas", "B-00202", "Basketball shoes", "Black", "2022-01-18", 6000.0, "15");
+ insert into product_tbl values(8, "Adidas", "V-00203", "Volleyball shoes", "Black", "2022-01-16", 7000.0, "13");
+ insert into product_tbl values(9, "Adidas", "R-00204", "Running shoes", "Red", "2022-01-22", 8000.0, "65");
+insert into product_tbl values(10, "Adidas", "C-00205", "Casual shoes", "Green", "2022-01-28", 9000.0, "50");
+
+insert into product_tbl values(11, "Reebok", "F-00301", "Football shoes", "Green", "2022-01-04", 5500.0, "75");
+insert into product_tbl values(12, "Reebok", "B-00302", "Basketball shoes", "Black", "2022-01-1", 4500.0, "25");
+insert into product_tbl values(13, "Reebok", "V-00303", "Volleyball shoes", "Yello", "2022-01-17", 3500.0, "35");
+insert into product_tbl values(14, "Reebok", "R-00304", "Running shoes", "Blue", "2022-01-16", 2500.0, "20");
+insert into product_tbl values(15, "Reebok", "C-00305", "Casual shoes", "Black", "2022-01-14", 1500.0, "10");
+
+insert into product_tbl values(16, "Nike", "F-00401", "Football shoes", "Black", "2022-01-01", 4500.0, "10");
+insert into product_tbl values(17, "Nike", "B-00402", "Basketball shoes", "Red", "2022-01-15", 2500.0, "40");
+insert into product_tbl values(18, "Nike", "V-00403", "Volleyball shoes", "Yelloe", "2022-01-16", 5500.0, "55");
+insert into product_tbl values(19, "Nike", "R-00404", "Running shoes", "Green", "2022-01-11", 6000.0, "60");
+insert into product_tbl values(20, "Nike", "C-00405", "Casual shoes", "Blue", "2022-01-1", 4500.0, "15");
+
++--------+-----------+----------+------------------+-----------+---------------------+-----------+--------------+
+| shoeID | shoeBrand | shoeName | shoeCategory     | shoeColor | shoeManufactureDate | shoePrice | shoeQuantity |
++--------+-----------+----------+------------------+-----------+---------------------+-----------+--------------+
+|      1 | Puma      | F-00101  | Football shoes   | Black     | 2022-01-15          |   6500.00 |           10 |
+|      2 | Puma      | B-00102  | Basketball shoes | Red       | 2022-01-10          |   5000.00 |           15 |
+|      3 | Puma      | V-00103  | Volleyball shoes | Black     | 2022-01-17          |   4000.00 |           20 |
+|      4 | Puma      | R-00104  | Running shoes    | Yellow    | 2022-01-01          |   5500.00 |           25 |
+|      5 | Puma      | C-00105  | Casual shoes     | Green     | 2022-01-19          |   6000.00 |            5 |
+|      6 | Adidas    | F-00201  | Football shoes   | Red       | 2022-01-14          |   4500.00 |          100 |
+|      7 | Adidas    | B-00202  | Basketball shoes | Black     | 2022-01-18          |   6000.00 |           15 |
+|      8 | Adidas    | V-00203  | Volleyball shoes | Black     | 2022-01-16          |   7000.00 |           13 |
+|      9 | Adidas    | R-00204  | Running shoes    | Red       | 2022-01-22          |   8000.00 |           65 |
+|     10 | Adidas    | C-00205  | Casual shoes     | Green     | 2022-01-28          |   9000.00 |           50 |
+|     11 | Reebok    | F-00301  | Football shoes   | Green     | 2022-01-04          |   5500.00 |           75 |
+|     12 | Reebok    | B-00302  | Basketball shoes | Black     | 2022-01-01          |   4500.00 |           25 |
+|     13 | Reebok    | V-00303  | Volleyball shoes | Yello     | 2022-01-17          |   3500.00 |           35 |
+|     14 | Reebok    | R-00304  | Running shoes    | Blue      | 2022-01-16          |   2500.00 |           20 |
+|     15 | Reebok    | C-00305  | Casual shoes     | Black     | 2022-01-14          |   1500.00 |           10 |
+|     16 | Nike      | F-00401  | Football shoes   | Black     | 2022-01-01          |   4500.00 |           10 |
+|     17 | Nike      | B-00402  | Basketball shoes | Red       | 2022-01-15          |   2500.00 |           40 |
+|     18 | Nike      | V-00403  | Volleyball shoes | Yelloe    | 2022-01-16          |   5500.00 |           55 |
+|     19 | Nike      | R-00404  | Running shoes    | Green     | 2022-01-11          |   6000.00 |           60 |
+|     20 | Nike      | C-00405  | Casual shoes     | Blue      | 2022-01-01          |   4500.00 |           15 |
++--------+-----------+----------+------------------+-----------+---------------------+-----------+--------------+
+
+
+{
+	"shoeID": 1,
+	"shoeBrand": "Adidas",
+	"shoeName": "F-00123",
+	"shoeCategory": "Football shoes",
+	"shoeColor": "Black",
+	"shoeManufactureDate": "2022-01-15",
+	"shoePrice": 5000.0,
+	"shoeQuantity": 10
+}
+
+
+===========================================================================================================================
+
+create table customer_tbl (
+userID Integer AUTO_INCREMENT, 
+userName varchar(255), 
+userEmail varchar(255),  
+userPhone BigInt,
+primary key (userID));
+
+insert into customer_tbl values(1, "Amit Singh", "amit1singh@gmail.com", 9124578369);
+insert into customer_tbl values(2, "Ram Tomar", "tomar.ram@gmail.com", 9124258469);
+insert into customer_tbl values(3, "Jay Kishan", "jay.kishan@gmail.com", 9369858369);
+insert into customer_tbl values(4, "Rohit Thakur", "takur1234@gmail.com", 911593569);
+insert into customer_tbl values(5, "Yogesh Diwan", "yogibaba@gmail.com", 9148628369);
+insert into customer_tbl values(6, "Rishav Pandey", "risua.pandu@gmail.com", 9999978369);
+insert into customer_tbl values(7, "Suresh Raina", "raina.boi@gmail.com", 9135128369);
+insert into customer_tbl values(8, "Mahindra Singh", "mahi.singh@gmail.com", 9124333369);
+insert into customer_tbl values(9, "R G Verma", "verma.sir@gmail.com", 9196482769);
+
+select * from product_tbl;
+select * from consumer_tbl;
+
+
++--------+----------------+-----------------------+------------+
+| userID | userName       | userEmail             | userPhone  |
++--------+----------------+-----------------------+------------+
+|      1 | Amit Singh     | amit1singh@gmail.com  | 9124578369 |
+|      2 | Ram Tomar      | tomar.ram@gmail.com   | 9124258469 |
+|      3 | Jay Kishan     | jay.kishan@gmail.com  | 9369858369 |
+|      4 | Rohit Thakur   | takur1234@gmail.com   |  911593569 |
+|      5 | Yogesh Diwan   | yogibaba@gmail.com    | 9148628369 |
+|      6 | Rishav Pandey  | risua.pandu@gmail.com | 9999978369 |
+|      7 | Suresh Raina   | raina.boi@gmail.com   | 9135128369 |
+|      8 | Mahindra Singh | mahi.singh@gmail.com  | 9124333369 |
+|      9 | R G Verma      | verma.sir@gmail.com   | 9196482769 |
++--------+----------------+-----------------------+------------+
+
+{
+    "user_ID": 2,
+    "user_Name": "Ram Tomar",
+    "user_Email": "tomar.ram@gmail.com",
+    "user_Phone": 9124258469
+}
+
+
+========================================================================================================================
+
+create table purchase_tbl (
+purchaseID Integer AUTO_INCREMENT, 
+userID Integer,
+shoeID Integer,
+purchaseQuantity Integer,
+purchaseDate Date,
+primary key (purchaseID),
+foreign key (userID) references customer_tbl (userID),
+foreign key (shoeID) references product_tbl (shoeID));
+
+insert into purchase_tbl values(1, 5, 5, 1, "2022-02-05");
+insert into purchase_tbl values(2, 5, 7, 1, "2022-02-05");
+insert into purchase_tbl values(3, 7, 12, 2, "2022-02-06");
+insert into purchase_tbl values(4, 9, 5, 1, "2022-02-08");
+insert into purchase_tbl values(5, 2, 14, 1, "2022-02-08");
+insert into purchase_tbl values(6, 8, 15, 1, "2022-02-09");
+insert into purchase_tbl values(7, 6, 5, 1, "2022-02-15");
+insert into purchase_tbl values(8, 1, 18, 1, "2022-02-15");
+select * from purchase_tbl;
+
++------------+--------+--------+------------------+--------------+
+| purchaseID | userID | shoeID | purchaseQuantity | purchaseDate |
++------------+--------+--------+------------------+--------------+
+|          1 |      5 |      5 |                1 | 2022-02-05   |
+|          2 |      5 |      7 |                1 | 2022-02-05   |
+|          3 |      7 |     12 |                2 | 2022-02-06   |
+|          4 |      9 |      5 |                1 | 2022-02-08   |
+|          5 |      2 |     14 |                1 | 2022-02-08   |
+|          6 |      8 |     15 |                1 | 2022-02-09   |
+|          7 |      6 |      5 |                1 | 2022-02-15   |
+|          8 |      1 |     18 |                1 | 2022-02-15   |
++------------+--------+--------+------------------+--------------+
+
+
+========================================================================================================================
+
+Select * from purchase_tbl where shoeID in (select shoeID from product_tbl where shoeCategory = "Casual shoes");
+
+@Query(select p from PurchaseModel where p.ProductModel.shoe_ID = ?1)
+List<PurchaseModel> findByCategory(String pc);
+	
