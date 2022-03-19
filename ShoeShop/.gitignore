@@ -37,3 +37,4 @@ build/
 .mvn
 .settings
 .target
+.problem/

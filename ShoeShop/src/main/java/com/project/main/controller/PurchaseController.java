@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.project.main.model.PurchaseModel;
-import com.project.main.repository.ProductRepository;
 import com.project.main.repository.PurchaseRepository;
 
 @RestController
@@ -18,9 +17,6 @@ public class PurchaseController {
 
 	@Autowired
 	PurchaseRepository purc_repo;
-	
-	@Autowired
-	ProductRepository prod_repo;
 	
 	@GetMapping(value = "/search/purchdate/{pd}")
 	public List<PurchaseModel> getPurchaseDate(@PathVariable String pd){

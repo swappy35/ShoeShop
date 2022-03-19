@@ -71,7 +71,4 @@ public class PurchaseModel {
 		this.purchase_Date = purchase_Date;
 	}
 	
-	
-
-
 }
